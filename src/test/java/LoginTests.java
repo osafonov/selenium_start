@@ -15,6 +15,7 @@ public class LoginTests {
     @Test
     public void loginLogoutSuccessTest() throws InterruptedException {
 
+        //https://googlechromelabs.github.io/chrome-for-testing/
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver125");
 
         WebDriver webDriver = new ChromeDriver();
