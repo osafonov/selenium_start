@@ -39,10 +39,10 @@ public class LoginTests {
 
         webDriver.findElement(logoutBtn).click();
 
+        Thread.sleep(2000);
+
         assertEquals(webDriver.getCurrentUrl(), "https://the-internet.herokuapp.com/login", "Where we are");
         assertEquals(webDriver.findElement(message).getText().split("\n")[0], "You logged out of the secure area!", "Message");
-
-        Thread.sleep(2000);
 
         webDriver.quit();
     }
