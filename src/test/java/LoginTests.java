@@ -25,7 +25,7 @@ public class LoginTests {
         By userPassInp = By.id("password");
         By loginBtn = By.tagName("button");
         By logoutBtn = By.className("button");
-        By message = By.id("flash");
+        By message = By.cssSelector("flash");
 
         webDriver.findElement(userNameInp).sendKeys("tomsmith");
         webDriver.findElement(userPassInp).sendKeys("SuperSecretPassword!");
