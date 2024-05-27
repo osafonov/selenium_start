@@ -2,19 +2,16 @@
 apply plugin: 'java'
 apply plugin: 'idea'
 
-jar {
-    baseName = 'selenium-start'
-    version =  '0.1.0'
-}
-
 repositories {
     mavenCentral()
     mavenLocal()
 }
 
 dependencies {
-    testCompile("org.seleniumhq.selenium:selenium-java:4.10.0")
-    testCompile("org.testng:testng:6.11")
+//    testCompile("org.seleniumhq.selenium:selenium-java:4.10.0")
+//    testCompile("org.testng:testng:6.11")
+    testImplementation("org.seleniumhq.selenium:selenium-java:4.10.0")
+    testImplementation("org.testng:testng:6.11")
 }
 
 test {
